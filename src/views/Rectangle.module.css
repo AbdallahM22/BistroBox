@@ -1,0 +1,12 @@
+.rectangle {
+  display: block;
+  background-color: #de4f76;
+  width: 164px;
+  height: 15px;
+}
+@media (min-width: 992px) {
+  .rectangle {
+    height: 29px;
+    width: 235px;
+  }
+}

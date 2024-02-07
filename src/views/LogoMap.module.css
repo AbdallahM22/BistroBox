@@ -1,0 +1,52 @@
+.logo-map {
+  width: 325px;
+  height: 128px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo-map img {
+  position: absolute;
+  width: 35px;
+  height: 60px;
+  bottom: 0;
+  right: 0;
+}
+.logo-map::before {
+  content: url("pop-up.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 287px;
+  height: 74.5px;
+  transition: 0.3s;
+}
+.logo-map::after {
+  content: "El Adel Abu Bakr Street, أبو‏ الفدا‏, Qesm El Zamalek, Cairo";
+
+  position: absolute;
+  width: 235px;
+  height: 40px;
+  top: 17px;
+  left: 18px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.logo-map::before,
+.logo-map::after {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+@media (min-width: 754px) {
+  .logo-map:hover::before,
+  .logo-map:hover::after {
+    visibility: visible;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,66 @@
+.slider-container {
+  position: relative;
+  padding: 0 26px;
+  margin: 30px 0px 41px;
+}
+@media (min-width: 992px) {
+  .slider-container {
+    padding: 0 83px;
+  }
+}
+.logos-swiper .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Manrope;
+  font-weight: 700;
+  line-height: 28px;
+  color: #61b4a9;
+}
+.logos-swiper .shape {
+  display: flex;
+}
+.logos-swiper .shape img {
+  min-width: 20px;
+  height: 100%;
+}
+.logos-swiper span {
+  font-size: 16px;
+}
+@media (min-width: 769px) {
+  .logos-swiper span {
+    font-size: 36px;
+  }
+}
+
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 5;
+}
+.prev-arrow {
+  left: 0px;
+}
+.next-arrow {
+  right: 0px;
+}
+.prev-arrow > div,
+.next-arrow > div {
+  width: 24px;
+  height: 24px;
+}
+@media (min-width: 992px) {
+  .prev-arrow,
+  .next-arrow {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

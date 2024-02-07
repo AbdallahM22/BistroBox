@@ -1,0 +1,28 @@
+.products-swiper .swiper-button-prev,
+.products-swiper .swiper-button-next {
+  top: 100% !important;
+}
+.products-swiper {
+  position: relative;
+}
+
+.arrows {
+  display: flex !important;
+  width: 143px;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .arrows {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 27px 0 45px;
+  }
+}
+@media (min-width: 992px) {
+  .arrows {
+    position: absolute;
+    top: calc(100% + 9px);
+    right: 0;
+  }
+}

@@ -1,0 +1,52 @@
+.menu {
+  padding-top: 170px;
+}
+.products-container {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .menu {
+    padding-top: 129px;
+  }
+  .products-container {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+    padding: 44px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 27px 0 53px 0;
+}
+.arrow {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: #e0e0e0;
+}
+.arrow.active,
+.arrow:hover {
+  background-color: #de4f76;
+  color: #fff;
+}
+.arrow svg {
+}
+@media (min-width: 992px) {
+  .arrows {
+    order: 2;
+    margin: 0;
+  }
+}

@@ -1,0 +1,111 @@
+header {
+  position: relative;
+  background-color: var(--main-light);
+  min-height: 56px;
+  min-width: 360px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0px 21px 0px 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Grota Rounded", sans-serif;
+  z-index: 100;
+}
+@media (min-width: 992px) {
+  header {
+    height: 96px;
+  }
+}
+.nav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 80px;
+}
+@media (min-width: 992px) {
+  .nav {
+    display: flex;
+  }
+}
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.nav li a:hover,
+.nav li a:active {
+  color: var(--secondary-two);
+}
+
+header button {
+  display: none;
+  border: none;
+  position: absolute;
+  right: 23px;
+  transform: translateY(-50%);
+  top: 50%;
+  padding: 19px 29px;
+  background-color: var(--secondary-six);
+  color: white;
+  border-radius: 14px;
+  font-family: "Grota Rounded";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+@media (min-width: 992px) {
+  header button {
+    display: block;
+  }
+}
+header .menu-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 13px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  header .menu-icon {
+    display: none;
+  }
+}
+header .menu-icon span {
+  position: absolute;
+  left: 3px;
+  width: 18px;
+  height: 2px;
+  background-color: #fff;
+  border-right: 1px solid initial;
+  border-left: 1px solid initial;
+  border-radius: 1px;
+  transition: 0.3s all ease-out;
+}
+header .menu-icon span:first-child {
+  top: 5px;
+}
+header .menu-icon span:nth-child(2) {
+  top: 11px;
+}
+header .menu-icon span:last-child {
+  top: 17px;
+}
+header .menu-icon.open span:first-child {
+  top: 11px;
+  transform: rotate(45deg);
+}
+header .menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+header .menu-icon.open span:last-child {
+  top: 11px;
+  transform: rotate(-45deg);
+}

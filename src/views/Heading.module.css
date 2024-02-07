@@ -1,0 +1,7 @@
+.heading {
+  /* min-width: 359px; */
+  font-family: "Grota Rounded";
+  font-weight: 400;
+  color: var(--main-dark);
+  margin-top: 11px;
+}

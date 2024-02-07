@@ -1,0 +1,130 @@
+.about {
+  position: relative;
+  background-color: var(--main-dark);
+  padding-top: 43px;
+  padding-bottom: 144.9px;
+}
+@media (min-width: 992px) {
+  .about {
+    padding-top: 122px;
+    padding-bottom: 122px;
+  }
+  .about .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(5, 101px);
+    gap: 25px 40px;
+    margin-top: 38px;
+  }
+}
+.text {
+  position: relative;
+  font-size: 48.3px;
+  font-family: "Grota Rounded";
+  line-height: 41px;
+  margin: 68px 0 45px;
+}
+@media (min-width: 992px) {
+  .text {
+    font-size: 88.3px;
+    line-height: 77px;
+    margin: 0;
+    margin-top: -15px;
+  }
+}
+.text div:first-of-type {
+  color: white;
+}
+.text div:nth-of-type(2) {
+  color: var(--secondary-eight);
+}
+.text div:last-of-type {
+  color: var(--secondary-six);
+}
+
+.about .info p {
+  color: white;
+  margin: 32px 0;
+}
+.about .info .btn {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-four);
+}
+.about .info .btn svg {
+  width: 28px;
+  height: 22px;
+  margin-left: 6px;
+}
+
+@media (max-width: 991px) {
+  .first-card {
+    display: inline-block;
+    height: 389px;
+    margin-right: 20px;
+  }
+  .second-card {
+    display: inline-block;
+    height: 294.19px;
+    grid-row: 3 / 5;
+  }
+}
+@media (min-width: 992px) {
+  .about .head {
+    font-size: 18px;
+    line-height: 22.4px;
+    letter-spacing: 1.6px;
+    margin: 38px 0 122px 0;
+  }
+  .text {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+  .about .info {
+    grid-column: 3/-1;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .about .info p {
+    margin-top: 39px;
+  }
+  .first-card {
+    grid-row: 1 / -1;
+  }
+  .second-card {
+    grid-row: 3 / -1;
+  }
+}
+.fresh {
+  position: absolute;
+  width: 343px;
+  height: 159px;
+  bottom: -80.5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fresh img {
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .fresh {
+    width: 410px;
+    height: 190px;
+    bottom: -95px;
+    transform: translateX(0);
+  }
+}
+@media (min-width: 1200px) {
+  .fresh {
+    width: 500px;
+    height: 304px;
+    bottom: -152px;
+  }
+}
+@media (min-width: 1400px) {
+  .fresh {
+    width: 695px;
+  }
+}

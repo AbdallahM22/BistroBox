@@ -1,0 +1,33 @@
+.btn {
+  display: block;
+  background-color: #de4f76;
+  width: 255px;
+  height: 61px;
+  margin: auto;
+  border-radius: 14px;
+  border: none;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--secondary-two);
+}
+@media (min-width: 576px) {
+  .btn {
+    width: 295px;
+    height: 74px;
+  }
+}
+@media (min-width: 992px) {
+  .btn {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+  }
+}

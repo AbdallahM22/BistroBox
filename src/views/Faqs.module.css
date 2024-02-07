@@ -1,0 +1,23 @@
+.faqs-container {
+  margin-top: 37px;
+  margin-bottom: 112px;
+}
+.faqs-container > div:first-of-type {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .faqs-container {
+    margin-top: 44px;
+    margin-bottom: 148px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+  .faqs-container > div:first-of-type {
+    display: block;
+  }
+  .faqs-container > div {
+    width: 48%;
+  }
+}
